@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="node_modules/shower-material/styles/styles.css">
-    <link rel="stylesheet" href="styles/rt-custom.css" />
+    <link rel="stylesheet" href="styles/comunica-custom.css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
     
@@ -40,41 +40,84 @@
       <p class="affiliation"><a href="http://idlab.technology/">Ghent University – imec – IDLab, Belgium</a></p>
     </section>
 
-    <section id="start" class="slide" style="background-image: url('img/TODO.jpg')" inlist="" rel="schema:hasPart" resource="#start">
-        <h2 property="schema:name" class="big" style="margin-top: 20px; color: white; text-shadow: 2px 2px black">INTRO</h2>
-        <ul style="color: white; text-shadow: 2px 2px black; font-size: 1.3em">
-            <li>TODO</li>
-        </ul>
+    <section id="connection-point" class="slide" inlist="" rel="schema:hasPart" resource="#connection-point">
+        <h2 property="schema:name" class="big" style="margin-top: 20px">Abstract access to Knowledge Graphs</h2>
+        <h3>Hide the complexities of reading and writing for app developers</h3>
+        <center>
+            <img src="img/computer.png" alt="Application" width="150px" style="margin-right: 20px" />
+            <span style="font-size: 6em; vertical-align: baseline; position: relative; top: -40px">&harr;</span>
+            <img src="img/comunica_red.svg" alt="Comunica Logo" width="170px" />
+            <span style="font-size: 6em; vertical-align: baseline; position: relative; top: -40px">&harr;</span>
+            <img src="img/globe.png" alt="Globe" width="150px" style="margin-left: 20px" />
+        </center>
+        <p style="text-align: right; font-style: italic"><a href="https://www.flaticon.com/free-icons/application" title="application icons">Image credit</a></p>
     </section>
-	
-    <section id="index" class="slide index" inlist="" rel="schema:hasPart" resource="#index">
+    
+    <section id="heterogeneous" class="slide" inlist="" rel="schema:hasPart" resource="#heterogeneous">
+      <h2 property="schema:name">Heterogeneity and Federation</h2>
       <ul>
-        <li><a href="#index-a">TODO</a></li>
-		<li><a href="#index-b">TODO</a></li>
+          <li>
+          	  <h3>Understanding any source</h3>
+			  <span class="indent">Give it any URL, and Comunica will aim to query it as efficient as possible</span><br \>
+              <span class="indent">Linked Data documents, Triple Pattern Fragments, SPARQL endpoints, ...</span>
+          </li>
+          <li>
+          	  <h3>Combining multiple sources</h3>
+			  <span class="indent">Data can be spread over multiple sources</span>
+          </li>
+          <li>
+          	  <h3>Source discovery</h3>
+			  <span class="indent">All relevant sources may not always be known beforehand</span><br \>
+              <span class="indent">For fully decentralised data <em>(Solid)</em></span>
+          </li>
       </ul>
     </section>
     
-    <section id="index-a" class="slide index" inlist="" rel="schema:hasPart" resource="#index-a">
-      <ul>
-        <li class="current"><a href="#index-a">TODO</a></li>
-		<li><a href="#index-b">TODO</a></li>
-      </ul>
-    </section>
-	
-    <section id="some-slide" class="slide" inlist="" rel="schema:hasPart" resource="#some-slide">
-      <h2 property="schema:name">TODO: A regular slide</h2>
+    <section id="modularity" class="slide" inlist="" rel="schema:hasPart" resource="#modularity">
+      <h2 property="schema:name">Flexible and Modular Meta-Query Engine</h2>
       <ul>
           <li>
-          	  <h3>A</h3>
-			  <span class="indent">TODO: Description</span>
+          	  <h3>Collection of building blocks</h3>
+			  <span class="indent">Independent modules implement specific functionality</span>
           </li>
-          <li>B</li>
-          <li>C</li>
+          <li>
+          	  <h3>Combining building blocks</h3>
+			  <span class="indent">Building custom query engines with specific functionality and settings</span><br \>
+              <span class="indent">Using a flexible configuration system</span>
+          </li>
+          <li>
+          	  <h3>Presets</h3>
+			  <span class="indent">Pre-compiled configurations for common combinations of functionality</span><br \>
+              <span class="indent"><em>Comunica SPARQL, Comunica Solid, ...</em></span>
+          </li>
       </ul>
     </section>
-	
-    <section id="conclusion" class="slide" inlist="" rel="schema:hasPart" resource="#conclusion">
-      <h2 property="schema:name" class="big">TODO: Conclusion</h2>
+    
+    <section id="open" class="slide" inlist="" rel="schema:hasPart" resource="#open">
+      <h2 property="schema:name">Comunica is Open</h2>
+      <ul>
+          <li>
+          	  <h3>Open standards</h3>
+			  <span class="indent">Implements Web standards (SPARQL, RDF, ...)</span><br \>
+              <span class="indent">Implemented using Web standards (JavaScript)</span><br \>
+              <span class="indent">Interoperable with other TS/JS libraries using <a href="https://rdf.js.org/">the RDF/JS interfaces</a></span>
+          </li>
+          <li>
+          	  <h3>Open source</h3>
+			  <span class="indent">MIT-licensed: <a href="https://github.com/comunica/comunica">https://github.com/comunica/comunica</a></span>
+          </li>
+          <li>
+          	  <h3>Open governance</h3>
+			  <span class="indent"><a href="https://comunica.dev/association/">Comunica Association</a> connects organisations</span><br \>
+          </li>
+      </ul>
+    </section>
+    
+    <section id="end" class="slide" inlist="" rel="schema:hasPart" resource="#end">
+        <center style="margin-top: 50px">
+            <img src="img/comunica_red.svg" alt="Comunica Logo" width="300px" />
+            <h2><a href="https://comunica.dev/">https://comunica.dev/</a></h2>
+        </center>
     </section>
 
     <footer>
